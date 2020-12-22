@@ -5,7 +5,8 @@ x=input('Enter the input 1 sequence: ');
 h=input('Enter the input 2 sequence: ');
 L=length(x);
 M=length(h);
-y=cconv(x,h); % “conv” inbuilt command used for convolution operation
+maxv=max(L,M)
+y=cconv(x,h,maxv); % “conv” inbuilt command used for convolution operation
 %------- To plot input 1 sequence-----------%
 subplot(3,1,1);
 stem(x);
